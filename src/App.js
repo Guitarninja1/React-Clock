@@ -68,34 +68,7 @@ function App() {
               <div className="center-dot3"></div>
               <div className="border3"></div>
             </div>
-
-            {/* <div
-            className="hour-hand"
-            style={{ transform: `rotate(${hourHand}deg)` }}
-          ></div>
-          <div
-            className="minute-hand"
-            style={{ transform: `rotate(${minHand}deg)` }}
-          ></div>
-          <div
-            className="second-hand"
-            style={{ transform: `rotate(${secHand}deg)` }}
-          ></div> */}
           </div>
-          {/* <div
-            className="clock-hand minute"
-            style={{ transform: `rotate(${minHand}deg)` }}
-          >
-            <div className="center-dot2"></div>
-            <div className="border2"></div>
-          </div>
-          <div
-            className="clock-hand minute"
-            style={{ transform: `rotate(${minHand}deg)` }}
-          >
-            <div className="center-dot2"></div>
-            <div className="border2"></div>
-          </div> */}
         </div>
       </header>
     </div>

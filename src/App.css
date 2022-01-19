@@ -14,14 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #040404;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 10vh;
 }
 
 .App-link {
@@ -35,4 +36,91 @@
   to {
     transform: rotate(360deg);
   }
+}
+.clock-face {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.time:not(:last-child):after {
+  content: " :";
+  color: rgb(86, 86, 86);
+}
+.time {
+  color: rgb(172, 51, 51);
+  font-family: fantasy;
+  font-size: 20vh;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.border3 {
+  border: 2px solid rgb(138, 62, 62);
+  min-width: 330px;
+  min-height: 330px;
+  border-radius: 50%;
+  display: grid;
+  align-content: center;
+}
+.minute-hand,
+.hour-hand,
+.second-hand {
+  max-width: 150px;
+  min-height: 10px;
+  background-color: rgb(138, 62, 62);
+  transform-origin: 100%;
+}
+
+.center-dot3 {
+  border: 2px solid rgb(138, 62, 62);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(138, 62, 62);
+}
+.clock-face-container,
+.clock-face-container2,
+.clock-face-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.center-dot2 {
+  border: 2px solid rgb(18, 18, 205);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(18, 18, 205);
+}
+.center-dot {
+  border: 2px solid rgb(0, 255, 81);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(0, 255, 81);
+}
+.border2 {
+  border: 2px solid rgb(0, 0, 255);
+  min-width: 280px;
+  min-height: 280px;
+  border-radius: 50%;
+  display: grid;
+  align-content: center;
+}
+.border {
+  border: 2px solid rgb(0, 255, 81);
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  display: grid;
+  align-content: center;
+}
+.second {
+  color: rgb(0, 255, 81);
+}
+.minute {
+  color: rgb(0, 0, 255);
+}
+.circle-clock {
+  margin-left: -330px;
 }
